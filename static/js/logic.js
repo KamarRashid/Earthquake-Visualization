@@ -100,7 +100,7 @@ function createMap(earthquakes) {
   // Create our map, giving it the darkmap, earthquakes, and tectonic plate layers to display
     var myMap = L.map("map", {
       center: [36.756107, -1.030593],
-      zoom: 2,
+      zoom: 2.5,
       layers: [darkmap, earthquakes, tectonicPlates]
     });
 
