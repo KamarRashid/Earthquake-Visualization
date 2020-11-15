@@ -99,9 +99,7 @@ function createMap(earthquakes) {
 
   // Create our map, giving it the darkmap, earthquakes, and tectonic plate layers to display
     var myMap = L.map("map", {
-      center: [
-        36.756107, -1.030593
-      ],
+      center: [36.756107, -1.030593],
       zoom: 2,
       layers: [darkmap, earthquakes, tectonicPlates]
     });
@@ -138,7 +136,6 @@ function createMap(earthquakes) {
               '<i style="background:' + colors(colourscale[i] + 1) + '"></i> ' +
               colourscale[i] + (colourscale[i + 1] ? '&ndash;' + colourscale[i + 1] + '<br>' : '+');
       }
-
       return leg;
   };
 
